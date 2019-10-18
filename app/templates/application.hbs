@@ -1,0 +1,26 @@
+
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <a class="navbar-brand" href="http://localhost:4200">7X/Yelp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExample02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="my-2 my-md-0 navbar-brand">
+           {{#if session.isAuthenticated}}
+
+          Logged in as {{ session.data.authenticated.user.displayName }}
+            <button {{action "logout "}} class="btn btn-secondary">Sign out</button>
+            {{else}}
+            <button {{action "login"}} class="btn btn-secondary">Sign in with Google</button>
+            {{/if}}
+    </div>
+  </div>
+</nav>
+<br>
+{{outlet}}

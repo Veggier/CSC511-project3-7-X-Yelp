@@ -1,0 +1,23 @@
+    <div class=" jumbotron rounded-0 jumbotron-background-image text-lemonchiffon text-tomato">
+      <div>
+        <h1 class="display-4 animated lightSpeedIn ">7X/Yelp</h1>
+        <p class="lead">Search website connected to the Yelp</p>
+        <hr class="my-4">
+        <p>Welcome to search the food you like！</p>
+    <form class="form-inline mt-2 mt-md-0">
+        <div>
+         Term: <Input class="form-control mr-sm-2" @value={{term}} @placeholder="burger" />
+         Location: <Input class="form-control mr-sm-2" @value={{location}} @placeholder="new york" />
+         Price Ranger: <Input class="form-control mr-sm-2" @value={{price}} @placeholder="eg. 1,2,3" />
+        </div>
+    </form> 
+      </div>
+  </div>
+<ul class="list-group">
+  {{#each model.business as |business|}}
+  <li class="list-group-item list-group-item-warning"><LinkTo @route='detail' @model={{business.id}}>{{business.name}}</LinkTo></li>
+  {{/each}}
+</ul>
+
+
+{{outlet}}

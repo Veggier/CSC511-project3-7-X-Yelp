@@ -1,0 +1,16 @@
+<div class="col-md-12 bg-light">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary"><a href={{model.url}}>Yelp Link</a></strong>
+          <div>
+          <h3 class="mb-0">{{model.name}}</h3>
+          </div>
+          <div class="mb-1 text-muted"><b>Price:</b>{{model.price}}</div>
+          <div class="card-text mb-auto"><b>Rating:</b>{{model.rating}}</div>
+          <p class="card-text mb-auto"><b>Phone:</b>{{model.display_phone}}</p>
+          <p class="card-text mb-auto"><b>Address:</b>{{model.location.formatted_address}}</p>
+          <p class="card-text mb-auto"><b>Phone:</b>{{model.display_phone}}</p>
+        </div>
+      </div>
+    </div>
+{{outlet}}
