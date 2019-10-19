@@ -12,5 +12,9 @@
           <p class="card-text mb-auto"><b>Phone:</b>{{model.display_phone}}</p>
         </div>
       </div>
-    </div>
+         {{#g-map lat=model.coordinates.latitude lng=model.coordinates.longitude zoom=12 as |g|}}
+      {{g.marker lat=model.coordinates.latitude lng=model.coordinates.longitude}}
+    {{/g-map}}
+  </div>
+  
 {{outlet}}

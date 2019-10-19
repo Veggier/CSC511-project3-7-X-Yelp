@@ -14,3 +14,7 @@ body{
 {
    color: rgb(61, 61, 102);
 }
+.ember-google-map {
+    width: 400px;
+    height: 400px;
+  }

@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function(environment) {
+ 
   let ENV = {
     apollo: {
       apiURL:'/api'
@@ -60,6 +61,16 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
-
+  ENV['ember-google-maps'] = {
+    key:"AIzaSyDHD8SSiicI5-7LwLdOHP8V4htrqjElSEc", // Using .env files in this example
+    language: 'en',
+    region: 'GB',
+    protocol: 'https',
+    version: '3.38',
+    libraries: ['geometry', 'places'], // Optional libraries
+    // client: undefined,
+    // channel: undefined,
+    // baseUrl: '//maps.googleapis.com/maps/api/js'
+    }
   return ENV;
 };
