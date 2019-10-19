@@ -19,9 +19,9 @@ Describe the time you spent on the project.
 
 ### Optional
 
- * [ ] Show location in Google Maps
+ * [x] Show location in Google Maps
 
 
 
 ## Notes & shoutouts
-In this lab, I have to spent time on setting the multiple search, and effert the final search. Now, I am working at how to set the google map.
+In this lab, I have to spent time on setting the multiple search, and effert the final search. Also, I finally connect the google map to the project.
