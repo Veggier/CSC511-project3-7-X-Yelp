@@ -23,8 +23,8 @@ Describe the time you spent on the project.
 
 ## GIF Walkthrough
 
-![Walkthrough GIF](path/to/gif.gif)
-
+![Walkthrough GIF](yelp.gif)
+![](yelp.gif)
 
 
 
