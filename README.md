@@ -21,6 +21,11 @@ Describe the time you spent on the project.
 
  * [x] Show location in Google Maps
 
+## GIF Walkthrough
+
+![Walkthrough GIF](path/to/gif.gif)
+
+
 
 
 ## Notes & shoutouts
