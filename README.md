@@ -24,7 +24,6 @@ Describe the time you spent on the project.
 ## GIF Walkthrough
 
 ![Walkthrough GIF](yelp.gif)
-![](yelp.gif)
 
 
 
