@@ -4,7 +4,6 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarsExample02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -15,7 +14,8 @@
            {{#if session.isAuthenticated}}
 
           Logged in as {{ session.data.authenticated.user.displayName }}
-            <button {{action "logout "}} class="btn btn-secondary">Sign out</button>
+            <button {{action "logout"}} class="btn btn-secondary">Sign out</button>
+             <LinkTo @route='favorites'>Favorites</LinkTo>
             {{else}}
             <button {{action "login"}} class="btn btn-secondary">Sign in with Google</button>
             {{/if}}

@@ -3,13 +3,6 @@
 module.exports = function(environment) {
  
   let ENV = {
-    apollo: {
-      apiURL:'/api'
-    },
-    modulePrefix: 'yelp',
-    environment,
-    rootURL: '/',
-    locationType: 'auto',
     firebase:
     {
       apiKey: "AIzaSyB7id26iNDp1Pf1_roUPTkZayY9cALWQs4",
@@ -19,8 +12,16 @@ module.exports = function(environment) {
       storageBucket: "silver-fastness-239916.appspot.com",
       messagingSenderId: "1041548687916",
       appId: "1:1041548687916:web:81485050f5cb0eb6aaaf89",
-      measurementId: "G-23YTBPLDYB"
+     // measurementId: "G-23YTBPLDYB"
     },
+    apollo: {
+      apiURL:'/api'
+    },
+    modulePrefix: 'yelp',
+    environment,
+    rootURL: '/',
+    locationType: 'auto',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

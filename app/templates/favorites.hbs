@@ -1,0 +1,22 @@
+
+<div class="row" style="padding: 30px;">
+
+{{#each model as |favorite|}}
+  <div class="col-sm-4 bs-component">
+      <div class="card border-primary mb-3" style="max-width: 30rem;">
+            <div class="card-header"><LinkTo @route='detail' @model={{favorite.yelpid}}>{{favorite.name}}</LinkTo></div>
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              <p class="card-text"><b>location:</b>{{favorite.location}} </p>
+              <p class="card-text"><b>Rating:</b>{{favorite.rating}} </p>
+              <p class="card-text"><b>price:</b>{{favorite.price}} </p>
+
+              
+            </div>
+          </div>
+      </div>
+{{else}}
+  <div><b>There is notting save in file</b></div>
+{{/each}}
+
+</div>
