@@ -4,9 +4,9 @@ import { setupApplicationTest } from 'ember-qunit';
 import { authenticateSession } from 'ember-simple-auth/test-support';
 //import DS from 'ember-data';
 //import { A } from '@ember/array';
-import RSVP from 'rsvp';
+//import RSVP from 'rsvp';
 import sinon from 'sinon';
-import EmberObject from '@ember/object';
+//import EmberObject from '@ember/object';
 // ember test --server
 // 
 module('Acceptance | main restaurant search page', function(hooks) {
@@ -34,11 +34,6 @@ module('Acceptance | main restaurant search page', function(hooks) {
   test('search correctly', async function(assert) {
     await visit('/detail/zcPWqsiqaPpNh8nJXR4gpw');
     assert.equal(currentURL(), '/detail/zcPWqsiqaPpNh8nJXR4gpw', 'we have reached the detail page');
-    const searchResultMOCKModel = EmberObject.create({
-          business: { name: 'fake restaurant NYC' },
-          favorite: false,
-          yelpid: 'zcPWqsiqaPpNh8nJXR4gpw'
-        });
      assert.dom('.address').exists('formatted_address exists');
      assert.dom('.phone').exists('display_phone exists');
      assert.dom('.rating').exists('rating exists');
