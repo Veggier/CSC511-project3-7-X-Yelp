@@ -14,10 +14,10 @@
            {{#if session.isAuthenticated}}
 
           Logged in as {{ session.data.authenticated.user.displayName }}
-            <button {{action "logout"}} class="btn btn-secondary">Sign out</button>
-             <LinkTo @route='favorites'>Favorites</LinkTo>
+            <button {{action "logout"}} class="btn btn-secondary sign-out">Sign out</button>
+             <LinkTo @route='favorites' @class="favorites">Favorites</LinkTo>
             {{else}}
-            <button {{action "login"}} class="btn btn-secondary">Sign in with Google</button>
+            <button {{action "login"}} class="btn btn-secondary sign-in">Sign in with Google</button>
             {{/if}}
     </div>
   </div>

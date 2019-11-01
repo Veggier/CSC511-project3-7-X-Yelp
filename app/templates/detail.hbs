@@ -1,21 +1,20 @@
 <div class="col-md-12 bg-light">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary"><a href={{model.business.url}}>Yelp Link</a> 
+          <strong class="d-inline-block mb-2 text-primary url"><a href={{model.business.url}}>Yelp Link</a> 
           
           </strong>
           <div>
-          <h3 class="mb-0">{{model.business.name}}               {{#if model.favorite}}
-            <button class="btn btn-outline-primary" {{action 'unsave'}}>Unsave</button>
+          <h3 class="mb-0 businessName">{{model.business.name}}               {{#if model.favorite}}
+            <button class="btn btn-outline-primary unsave" {{action 'unsave'}}>Unsave</button>
           {{else}}
-            <button  class="btn btn-outline-primary" {{action 'save'}}>Save</button>
+            <button  class="btn btn-outline-primary save" {{action 'save'}}>Save</button>
           {{/if}}</h3>
           </div>
-          <div class="mb-1 text-muted"><b>Price:</b>{{model.business.price}}</div>
-          <div class="card-text mb-auto"><b>Rating:</b>{{model.business.rating}}</div>
-          <p class="card-text mb-auto"><b>Phone:</b>{{model.business.display_phone}}</p>
-          <p class="card-text mb-auto"><b>Address:</b>{{model.business.location.formatted_address}}</p>
-          <p class="card-text mb-auto"><b>Phone:</b>{{model.business.display_phone}}</p>
+          <div class="mb-1 text-muted price"><b>Price:</b>{{model.business.price}}</div>
+          <div class="card-text mb-auto rating"><b>Rating:</b>{{model.business.rating}}</div>
+          <p class="card-text mb-auto phone"><b>Phone:</b>{{model.business.display_phone}}</p>
+          <p class="card-text mb-auto address"><b>Address:</b>{{model.business.location.formatted_address}}</p>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img src="{{model.business.photos}}" alt="photo" width="250" height="250">
@@ -25,5 +24,4 @@
       {{g.marker lat=model.business.coordinates.latitude lng=model.business.coordinates.longitude}}
     {{/g-map}}
   </div>
-  
 {{outlet}}
