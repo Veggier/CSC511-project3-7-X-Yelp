@@ -10,6 +10,7 @@ export default Controller.extend({
         location:this.get('model.business.location.formatted_address'),
         price:this.get('model.business.price')
       });
+     
       favorite.save().then(() => {
         this.set('model.favorite', favorite);
       });
