@@ -66,7 +66,7 @@
   },
   "dependencies": {
     "curl-request": "^1.1.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "request": "^2.88.2"
   }
 }
